@@ -950,11 +950,11 @@ where
     //
     // internal methods
     //
-    fn raw_nodes(&self) -> &[Node<Option<N>, Ix>] {
+    pub fn raw_nodes(&self) -> &[Node<Option<N>, Ix>] {
         self.g.raw_nodes()
     }
 
-    fn raw_edges(&self) -> &[Edge<Option<E>, Ix>] {
+    pub fn raw_edges(&self) -> &[Edge<Option<E>, Ix>] {
         self.g.raw_edges()
     }
 
